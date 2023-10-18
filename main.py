@@ -156,8 +156,8 @@ def admin(command):
         
     else:
         bot.send_message(command.from_user.id, text=config["AdmText"]["NotAdm"])
-        bot.send_message(5434593118, text=command.from_user.id)
-        bot.send_message(5434593118, text=command.chat.id)
+        bot.send_message((adminchat), text=command.from_user.id)
+        bot.send_message((adminchat), text=command.chat.id)
 
 @bot.message_handler(content_types=["call"])
 def Cal(call):
@@ -3769,15 +3769,3 @@ if __name__=='__main__':
             bot.send_message(config["Admins"]["1"], text=str(e))
             time.sleep(5)
             continue
-
-
-# scp ~/VScode/Python/Fun/Klient_bot_Pavel/main.py colorfulb@193.104.57.18:/home/colorfulb/Klient_bot_Pavel
-# nohup python main.py &
-# ps -ax | grep python
-
-# scp C:\Users\super\VCode\Python\Klient_bot_Pavel\main.py root@194.87.95.240:~/klients_bot/Klient_bot_Pavel
-# scp -r C:\Users\super\VCode\Python\Klient_bot_Pavel root@194.87.95.240:~/klients_bot
-
-# 2mbLyJYziX
-
-# scp root@194.87.95.240:~/klients_bot/Klient_bot_Pavel/nohup.out C:\Users\super\VCode\Python\Klient_bot_Pavel
